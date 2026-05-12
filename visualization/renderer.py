@@ -98,40 +98,48 @@ class Renderer:
     # ── Vision debug (D key) ─────────────────────────────────────────────────
 
     def _draw_vision_debug(self, environment) -> None:
-        """Show each agent's detection circle and lines to visible food."""
         surf = self._vision_surf
         surf.fill((0, 0, 0, 0))
 
-        foods   = [e for e in environment.entities if isinstance(e, (Food, SuperFood)) and e.alive]
-        agents  = [e for e in environment.entities if isinstance(e, FishAgent) and e.alive]
+        foods     = [e for e in environment.entities if isinstance(e, (Food, SuperFood)) and e.alive]
+        predators = [e for e in environment.entities if isinstance(e, Predator) and e.alive]
+        agents    = [e for e in environment.entities if isinstance(e, FishAgent) and e.alive]
 
         for agent in agents:
             ax, ay = int(agent.position[0]), int(agent.position[1])
             r = int(agent.detection_radius)
 
-            # Faint detection circle
+            # Detection circle
             pygame.draw.circle(surf, (60, 120, 255, 35), (ax, ay), r)
             pygame.draw.circle(surf, (80, 150, 255, 80), (ax, ay), r, 1)
 
-            # Eat radius inner circle
+            # Eat radius
             pygame.draw.circle(surf, (80, 220, 80, 60), (ax, ay), int(agent.eat_radius), 1)
 
-            # Lines to each visible food item
+            # Lines to visible food (green = regular, gold = super)
             for food in foods:
                 dist = agent.distance_to(food)
                 if dist < agent.detection_radius:
                     fx, fy = int(food.position[0]), int(food.position[1])
-                    # Brighter line when closer
                     intensity = int(120 * (1 - dist / agent.detection_radius))
-                    is_super = isinstance(food, SuperFood)
-                    col = (intensity, 200, intensity, intensity) if not is_super \
+                    col = (intensity, 200, intensity, intensity) if not isinstance(food, SuperFood) \
                           else (200, 180, 0, intensity)
                     pygame.draw.line(surf, col, (ax, ay), (fx, fy), 1)
 
+            # Lines to visible predators (red — thick so clearly visible)
+            for pred in predators:
+                dist = agent.distance_to(pred)
+                if dist < agent.detection_radius:
+                    px, py = int(pred.position[0]), int(pred.position[1])
+                    intensity = int(200 * (1 - dist / agent.detection_radius))
+                    pygame.draw.line(surf, (255, intensity, 0, max(80, intensity)), (ax, ay), (px, py), 2)
+
         self._screen.blit(surf, (0, 0))
 
-        # Debug label
-        lbl = self._font_s.render("[D] Vision Debug ON", True, (100, 180, 255))
+        lbl = self._font_s.render(
+            "[D] Vision Debug: mavi=algi  yesil=besin  kirmizi=predator",
+            True, (100, 180, 255),
+        )
         self._screen.blit(lbl, (self._width // 2 - lbl.get_width() // 2, self._height - 18))
 
     # ── Grid ─────────────────────────────────────────────────────────────────

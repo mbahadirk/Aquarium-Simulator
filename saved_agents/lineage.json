@@ -1,5 +1,13 @@
 {
-  "5279bd97": {
+  "caca6a98": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 9201,
+    "cause": "predation_2hit",
+    "fitness": 960.1
+  },
+  "17a489b7": {
     "generation": 7,
     "parent_ids": [],
     "born_step": 0,
@@ -7,3105 +15,672 @@
     "cause": null,
     "fitness": null
   },
-  "69b7149f": {
+  "58e4fcfd": {
     "generation": 7,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 6628,
-    "cause": "starvation",
-    "fitness": 852.8000000000001
-  },
-  "77a17003": {
-    "generation": 7,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 6565,
+    "died_step": 8400,
     "cause": "predation_2hit",
-    "fitness": 876.5
+    "fitness": 930.0
   },
-  "e3d41cf6": {
+  "d45c807a": {
     "generation": 7,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 4510,
-    "cause": "starvation",
-    "fitness": 611.0
-  },
-  "6ae819ae": {
-    "generation": 7,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 5618,
-    "cause": "starvation",
-    "fitness": 746.8000000000001
-  },
-  "d6068339": {
-    "generation": 7,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 6264,
-    "cause": "starvation",
-    "fitness": 881.4000000000001
-  },
-  "88e12aee": {
-    "generation": 7,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1533,
+    "died_step": 5626,
     "cause": "predation_2hit",
-    "fitness": 253.3
+    "fitness": 617.6
   },
-  "2b4457b3": {
+  "e31460cf": {
     "generation": 7,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 4610,
-    "cause": "starvation",
-    "fitness": 566.0
-  },
-  "5e9df133": {
-    "generation": 7,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 6922,
-    "cause": "starvation",
-    "fitness": 1047.2
-  },
-  "dafbe154": {
-    "generation": 7,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 4828,
+    "died_step": 854,
     "cause": "predation_2hit",
-    "fitness": 797.8
+    "fitness": 85.4
   },
-  "88fb1a72": {
+  "eb4fd928": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 970,
+    "cause": "predation_2hit",
+    "fitness": 127.0
+  },
+  "e5356878": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
+  },
+  "b22ff4f2": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 9943,
+    "cause": "predation_2hit",
+    "fitness": 1064.3000000000002
+  },
+  "60f5f6cc": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 4681,
+    "cause": "predation_2hit",
+    "fitness": 488.1
+  },
+  "2d8105f0": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 2523,
+    "cause": "predation_2hit",
+    "fitness": 262.3
+  },
+  "e9c11a9e": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 6297,
+    "died_step": 1746,
+    "cause": "starvation",
+    "fitness": 179.60000000000002
+  },
+  "d72629c0": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 487,
+    "cause": "predation_2hit",
+    "fitness": 53.7
+  },
+  "b474ed14": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 1056,
+    "cause": "starvation",
+    "fitness": 110.60000000000001
+  },
+  "726e95d1": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 1623,
+    "cause": "starvation",
+    "fitness": 202.3
+  },
+  "2d37fc53": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 5309,
+    "cause": "predation_2hit",
+    "fitness": 550.9
+  },
+  "aeb369e0": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 1158,
+    "cause": "predation_2hit",
+    "fitness": 145.8
+  },
+  "3419e8a4": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 576,
+    "cause": "predation_2hit",
+    "fitness": 62.6
+  },
+  "1924e1a0": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 2439,
+    "cause": "starvation",
+    "fitness": 273.9
+  },
+  "7eca62a9": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 735,
+    "cause": "starvation",
+    "fitness": 73.5
+  },
+  "6647af4a": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 783,
+    "cause": "starvation",
+    "fitness": 78.30000000000001
+  },
+  "b6bb1412": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 1266,
+    "cause": "starvation",
+    "fitness": 156.60000000000002
+  },
+  "82dec19a": {
+    "generation": 0,
+    "parent_ids": [],
+    "born_step": 0,
+    "died_step": 826,
     "cause": "predation_1hit",
-    "fitness": 649.7
+    "fitness": 87.60000000000001
   },
-  "4b90b7bf": {
+  "0735992c": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 1559,
+    "died_step": 1232,
     "cause": "starvation",
-    "fitness": 165.9
+    "fitness": 128.2
   },
-  "e10a2b5f": {
+  "040076c7": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 874,
+    "died_step": 2014,
     "cause": "starvation",
-    "fitness": 87.4
+    "fitness": 201.4
   },
-  "9511dee3": {
+  "faaa6c49": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 2164,
-    "cause": "predation_1hit",
-    "fitness": 256.4
-  },
-  "03114457": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1052,
-    "cause": "starvation",
-    "fitness": 110.2
-  },
-  "036ff93a": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 736,
-    "cause": "starvation",
-    "fitness": 73.60000000000001
-  },
-  "549e20f3": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1642,
-    "cause": "starvation",
-    "fitness": 164.20000000000002
-  },
-  "46eb730c": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 2753,
-    "cause": "starvation",
-    "fitness": 310.3
-  },
-  "9bf15744": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1058,
-    "cause": "starvation",
-    "fitness": 110.80000000000001
-  },
-  "c878729e": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 5441,
-    "cause": "starvation",
-    "fitness": 664.1
-  },
-  "f6aa5e02": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1089,
+    "died_step": 2680,
     "cause": "predation_2hit",
-    "fitness": 193.9
+    "fitness": 288.0
   },
-  "c84ee1cc": {
+  "a6e9a0ef": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 1066,
+    "died_step": 1139,
     "cause": "starvation",
-    "fitness": 111.60000000000001
+    "fitness": 118.9
   },
-  "bfacc34e": {
+  "8286676d": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 2318,
+    "died_step": 1119,
     "cause": "starvation",
-    "fitness": 266.8
+    "fitness": 116.9
   },
-  "09b6f03c": {
+  "eff88226": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 1185,
+    "died_step": 2131,
     "cause": "starvation",
-    "fitness": 123.5
+    "fitness": 243.10000000000002
   },
-  "d90f1a26": {
+  "33ce6836": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 1995,
+    "died_step": 742,
     "cause": "starvation",
-    "fitness": 209.5
+    "fitness": 74.2
   },
-  "d8ecbf46": {
+  "88701d35": {
     "generation": 0,
     "parent_ids": [],
     "born_step": 0,
-    "died_step": 3209,
+    "died_step": 411,
     "cause": "starvation",
-    "fitness": 435.90000000000003
+    "fitness": 41.1
   },
-  "4cc62175": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1798,
-    "cause": "starvation",
-    "fitness": 184.8
-  },
-  "97e9a5de": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 2489,
+  "74950068": {
+    "generation": 8,
+    "parent_ids": [
+      "58e4fcfd",
+      "eff88226"
+    ],
+    "born_step": 241,
+    "died_step": 472,
     "cause": "predation_2hit",
-    "fitness": 373.9
+    "fitness": 23.1
   },
-  "b9b254a4": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1006,
-    "cause": "starvation",
-    "fitness": 105.60000000000001
-  },
-  "58ba6099": {
-    "generation": 0,
-    "parent_ids": [],
-    "born_step": 0,
-    "died_step": 1905,
-    "cause": "starvation",
-    "fitness": 300.5
-  },
-  "7e36dc9a": {
+  "bb508a10": {
     "generation": 8,
     "parent_ids": [
-      "6ae819ae",
-      "c878729e"
+      "58e4fcfd",
+      "eff88226"
     ],
-    "born_step": 188,
-    "died_step": 1805,
+    "born_step": 241,
+    "died_step": 2083,
+    "cause": "starvation",
+    "fitness": 214.20000000000002
+  },
+  "a972b665": {
+    "generation": 8,
+    "parent_ids": [
+      "b22ff4f2",
+      "b6bb1412"
+    ],
+    "born_step": 339,
+    "died_step": 1113,
+    "cause": "starvation",
+    "fitness": 77.4
+  },
+  "456326fb": {
+    "generation": 8,
+    "parent_ids": [
+      "b22ff4f2",
+      "b6bb1412"
+    ],
+    "born_step": 339,
+    "died_step": 1265,
     "cause": "predation_2hit",
-    "fitness": 196.70000000000002
+    "fitness": 92.60000000000001
   },
-  "cf2a5fb0": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "c878729e"
-    ],
-    "born_step": 188,
-    "died_step": 4318,
-    "cause": "starvation",
-    "fitness": 423.0
-  },
-  "1fb42651": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "88e12aee"
-    ],
-    "born_step": 224,
-    "died_step": 5264,
-    "cause": "predation_2hit",
-    "fitness": 824.0
-  },
-  "cb05631b": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "88e12aee"
-    ],
-    "born_step": 224,
-    "died_step": 3360,
-    "cause": "starvation",
-    "fitness": 373.6
-  },
-  "1575ce06": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "97e9a5de"
-    ],
-    "born_step": 247,
-    "died_step": 3890,
-    "cause": "starvation",
-    "fitness": 374.3
-  },
-  "f79fa4e5": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "97e9a5de"
-    ],
-    "born_step": 247,
-    "died_step": 3070,
-    "cause": "starvation",
-    "fitness": 282.3
-  },
-  "349df851": {
+  "0693ac36": {
     "generation": 9,
     "parent_ids": [
-      "97e9a5de",
-      "1fb42651"
+      "eb4fd928",
+      "bb508a10"
     ],
-    "born_step": 347,
-    "died_step": 2277,
-    "cause": "predation_2hit",
-    "fitness": 323.0
+    "born_step": 371,
+    "died_step": 735,
+    "cause": "starvation",
+    "fitness": 36.4
   },
-  "23e496ad": {
+  "1753d371": {
     "generation": 9,
     "parent_ids": [
-      "97e9a5de",
-      "1fb42651"
+      "eb4fd928",
+      "bb508a10"
     ],
-    "born_step": 347,
-    "died_step": 1093,
-    "cause": "predation_2hit",
-    "fitness": 134.60000000000002
-  },
-  "d5e3877c": {
-    "generation": 8,
-    "parent_ids": [
-      "2b4457b3",
-      "5e9df133"
-    ],
-    "born_step": 358,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0eaa23d0": {
-    "generation": 8,
-    "parent_ids": [
-      "2b4457b3",
-      "5e9df133"
-    ],
-    "born_step": 358,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "b7fe8f67": {
-    "generation": 8,
-    "parent_ids": [
-      "e3d41cf6",
-      "dafbe154"
-    ],
-    "born_step": 365,
-    "died_step": 4359,
+    "born_step": 371,
+    "died_step": 1600,
     "cause": "starvation",
-    "fitness": 459.40000000000003
+    "fitness": 127.9
   },
-  "a70ae29f": {
-    "generation": 8,
-    "parent_ids": [
-      "e3d41cf6",
-      "dafbe154"
-    ],
-    "born_step": 365,
-    "died_step": 6676,
-    "cause": "predation_2hit",
-    "fitness": 781.1
-  },
-  "5f6976ab": {
+  "e13c519b": {
     "generation": 1,
     "parent_ids": [
-      "9511dee3",
-      "c878729e"
+      "726e95d1",
+      "1924e1a0"
     ],
-    "born_step": 406,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
+    "born_step": 754,
+    "died_step": 1489,
+    "cause": "starvation",
+    "fitness": 73.5
   },
-  "11445e9a": {
+  "a0b31d5c": {
     "generation": 1,
     "parent_ids": [
-      "9511dee3",
-      "c878729e"
+      "726e95d1",
+      "1924e1a0"
     ],
-    "born_step": 406,
+    "born_step": 754,
+    "died_step": 2182,
+    "cause": "starvation",
+    "fitness": 172.8
+  },
+  "7a682c0a": {
+    "generation": 8,
+    "parent_ids": [
+      "58e4fcfd",
+      "a0b31d5c"
+    ],
+    "born_step": 1013,
+    "died_step": 1751,
+    "cause": "starvation",
+    "fitness": 73.8
+  },
+  "737209e3": {
+    "generation": 8,
+    "parent_ids": [
+      "58e4fcfd",
+      "a0b31d5c"
+    ],
+    "born_step": 1013,
+    "died_step": 2083,
+    "cause": "starvation",
+    "fitness": 112.0
+  },
+  "27914e79": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2083,
+    "died_step": 5132,
+    "cause": "predation_2hit",
+    "fitness": 324.90000000000003
+  },
+  "efd661da": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2083,
+    "died_step": 2223,
+    "cause": "predation_2hit",
+    "fitness": 19.0
+  },
+  "9ab14bab": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2131,
+    "died_step": 15849,
+    "cause": "predation_2hit",
+    "fitness": 1446.8000000000002
+  },
+  "8d9136a4": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2182,
+    "died_step": 5405,
+    "cause": "starvation",
+    "fitness": 322.3
+  },
+  "f68b2469": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2223,
+    "died_step": 3016,
+    "cause": "predation_2hit",
+    "fitness": 104.30000000000001
+  },
+  "0ee139c0": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2439,
     "died_step": null,
     "cause": null,
     "fitness": null
   },
-  "ff26e02b": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "58ba6099"
-    ],
-    "born_step": 432,
-    "died_step": 2212,
-    "cause": "starvation",
-    "fitness": 183.0
+  "1c8409ac": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2523,
+    "died_step": 5406,
+    "cause": "predation_2hit",
+    "fitness": 303.3
   },
-  "e691a5e7": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "58ba6099"
-    ],
-    "born_step": 432,
-    "died_step": 2285,
-    "cause": "starvation",
-    "fitness": 220.3
-  },
-  "cbd2ab70": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "97e9a5de"
-    ],
-    "born_step": 509,
-    "died_step": 1806,
+  "4fff8557": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 2680,
+    "died_step": 8249,
     "cause": "predation_1hit",
-    "fitness": 229.70000000000002
+    "fitness": 571.9
   },
-  "51dc8478": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "97e9a5de"
-    ],
-    "born_step": 509,
-    "died_step": 1765,
-    "cause": "predation_1hit",
-    "fitness": 205.60000000000002
+  "946f43a8": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 3016,
+    "died_step": 9748,
+    "cause": "predation_2hit",
+    "fitness": 708.2
   },
-  "aadafe97": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "d6068339"
-    ],
-    "born_step": 532,
-    "died_step": 5580,
-    "cause": "starvation",
-    "fitness": 684.8
+  "517db68c": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 4681,
+    "died_step": 6884,
+    "cause": "predation_2hit",
+    "fitness": 255.3
   },
-  "98665d51": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "d6068339"
-    ],
-    "born_step": 532,
-    "died_step": 6926,
-    "cause": "starvation",
-    "fitness": 824.4000000000001
+  "c0c0d0f0": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 5132,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
   },
-  "96787d26": {
-    "generation": 9,
-    "parent_ids": [
-      "f6aa5e02",
-      "cbd2ab70"
-    ],
-    "born_step": 583,
-    "died_step": 1947,
-    "cause": "starvation",
+  "8cc29f68": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 5309,
+    "died_step": 6373,
+    "cause": "predation_2hit",
     "fitness": 141.4
   },
-  "17e676c1": {
-    "generation": 9,
-    "parent_ids": [
-      "f6aa5e02",
-      "cbd2ab70"
-    ],
-    "born_step": 583,
-    "died_step": 1768,
+  "3fa1aaa3": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 5405,
+    "died_step": 14539,
+    "cause": "predation_2hit",
+    "fitness": 963.4000000000001
+  },
+  "67fbdb5b": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 5406,
+    "died_step": 6603,
+    "cause": "predation_2hit",
+    "fitness": 139.7
+  },
+  "e3261e60": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 5626,
+    "died_step": 8197,
+    "cause": "predation_2hit",
+    "fitness": 267.1
+  },
+  "70002301": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 6373,
+    "died_step": 8046,
+    "cause": "predation_2hit",
+    "fitness": 177.3
+  },
+  "348658c4": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 6603,
+    "died_step": 12751,
     "cause": "predation_1hit",
-    "fitness": 128.5
+    "fitness": 634.8000000000001
   },
-  "b7537af3": {
-    "generation": 10,
-    "parent_ids": [
-      "97e9a5de",
-      "23e496ad"
-    ],
-    "born_step": 609,
-    "died_step": 734,
-    "cause": "predation_2hit",
-    "fitness": 12.5
-  },
-  "a73031ea": {
-    "generation": 10,
-    "parent_ids": [
-      "97e9a5de",
-      "23e496ad"
-    ],
-    "born_step": 609,
-    "died_step": 1403,
-    "cause": "predation_2hit",
-    "fitness": 114.4
-  },
-  "14bf8977": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "d6068339"
-    ],
-    "born_step": 632,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "f89acfdb": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "d6068339"
-    ],
-    "born_step": 632,
-    "died_step": 2964,
-    "cause": "starvation",
-    "fitness": 233.20000000000002
-  },
-  "b51c3d4b": {
-    "generation": 9,
-    "parent_ids": [
-      "88e12aee",
-      "51dc8478"
-    ],
-    "born_step": 666,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "5f9e8222": {
-    "generation": 9,
-    "parent_ids": [
-      "88e12aee",
-      "51dc8478"
-    ],
-    "born_step": 666,
-    "died_step": 1235,
-    "cause": "predation_2hit",
-    "fitness": 56.900000000000006
-  },
-  "5cd3ed51": {
-    "generation": 11,
-    "parent_ids": [
-      "f6aa5e02",
-      "a73031ea"
-    ],
-    "born_step": 683,
-    "died_step": 2408,
+  "66bafbde": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 6884,
+    "died_step": 8459,
     "cause": "predation_1hit",
-    "fitness": 172.5
+    "fitness": 157.5
   },
-  "721be023": {
-    "generation": 11,
-    "parent_ids": [
-      "f6aa5e02",
-      "a73031ea"
-    ],
-    "born_step": 683,
-    "died_step": 836,
+  "48b4fd81": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 8046,
+    "died_step": 15052,
     "cause": "predation_2hit",
-    "fitness": 15.3
+    "fitness": 775.6
   },
-  "e3a26af6": {
-    "generation": 1,
-    "parent_ids": [
-      "c878729e",
-      "bfacc34e"
-    ],
-    "born_step": 684,
-    "died_step": 1430,
-    "cause": "starvation",
-    "fitness": 74.60000000000001
+  "0bb00d52": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 8197,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
   },
-  "aaa59132": {
-    "generation": 1,
-    "parent_ids": [
-      "c878729e",
-      "bfacc34e"
-    ],
-    "born_step": 684,
-    "died_step": 1762,
-    "cause": "starvation",
-    "fitness": 117.80000000000001
+  "25f08143": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 8249,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
   },
-  "cf10fa31": {
-    "generation": 10,
-    "parent_ids": [
-      "23e496ad",
-      "cbd2ab70"
-    ],
-    "born_step": 709,
-    "died_step": 1470,
+  "74ebb210": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 8400,
+    "died_step": 8676,
     "cause": "predation_2hit",
-    "fitness": 76.10000000000001
+    "fitness": 27.6
   },
-  "be7734a3": {
-    "generation": 10,
-    "parent_ids": [
-      "23e496ad",
-      "cbd2ab70"
-    ],
-    "born_step": 709,
-    "died_step": 1676,
-    "cause": "starvation",
-    "fitness": 96.7
-  },
-  "0a6478b0": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "d6068339"
-    ],
-    "born_step": 732,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "caada65a": {
-    "generation": 8,
-    "parent_ids": [
-      "5279bd97",
-      "d6068339"
-    ],
-    "born_step": 732,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "2137da37": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "dafbe154"
-    ],
-    "born_step": 743,
-    "died_step": 3354,
-    "cause": "starvation",
-    "fitness": 271.1
-  },
-  "deea1add": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "dafbe154"
-    ],
-    "born_step": 743,
-    "died_step": 6397,
-    "cause": "starvation",
-    "fitness": 585.4
-  },
-  "ec7006cd": {
-    "generation": 9,
-    "parent_ids": [
-      "58ba6099",
-      "98665d51"
-    ],
-    "born_step": 746,
-    "died_step": 4345,
-    "cause": "starvation",
-    "fitness": 364.90000000000003
-  },
-  "3d4a557e": {
-    "generation": 9,
-    "parent_ids": [
-      "58ba6099",
-      "98665d51"
-    ],
-    "born_step": 746,
-    "died_step": 5050,
-    "cause": "starvation",
-    "fitness": 600.4000000000001
-  },
-  "2110fede": {
-    "generation": 9,
-    "parent_ids": [
-      "d8ecbf46",
-      "51dc8478"
-    ],
-    "born_step": 766,
-    "died_step": 1807,
-    "cause": "predation_1hit",
-    "fitness": 109.10000000000001
-  },
-  "5d1fab37": {
-    "generation": 9,
-    "parent_ids": [
-      "d8ecbf46",
-      "51dc8478"
-    ],
-    "born_step": 766,
-    "died_step": 2766,
-    "cause": "starvation",
-    "fitness": 280.0
-  },
-  "4659d6e9": {
-    "generation": 1,
-    "parent_ids": [
-      "f6aa5e02",
-      "97e9a5de"
-    ],
-    "born_step": 783,
-    "died_step": 1307,
+  "429a7946": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 8459,
+    "died_step": 11802,
     "cause": "predation_2hit",
-    "fitness": 52.400000000000006
+    "fitness": 364.3
   },
-  "fe90c414": {
-    "generation": 1,
-    "parent_ids": [
-      "f6aa5e02",
-      "97e9a5de"
-    ],
-    "born_step": 783,
-    "died_step": 1518,
-    "cause": "starvation",
-    "fitness": 73.5
-  },
-  "9ad59aa5": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "e3d41cf6"
-    ],
-    "born_step": 806,
-    "died_step": 3460,
-    "cause": "starvation",
-    "fitness": 340.40000000000003
-  },
-  "36514b82": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "e3d41cf6"
-    ],
-    "born_step": 806,
-    "died_step": 4507,
+  "0a66195b": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 8676,
+    "died_step": 13360,
     "cause": "predation_2hit",
-    "fitness": 560.1
+    "fitness": 523.4000000000001
   },
-  "c84befa4": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "d6068339"
-    ],
-    "born_step": 843,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "177fd8d8": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "d6068339"
-    ],
-    "born_step": 843,
-    "died_step": 5395,
-    "cause": "starvation",
-    "fitness": 490.20000000000005
-  },
-  "e0db88fc": {
-    "generation": 9,
-    "parent_ids": [
-      "d8ecbf46",
-      "b7fe8f67"
-    ],
-    "born_step": 866,
-    "died_step": 3653,
-    "cause": "starvation",
-    "fitness": 308.7
-  },
-  "6fe2e7fd": {
-    "generation": 9,
-    "parent_ids": [
-      "d8ecbf46",
-      "b7fe8f67"
-    ],
-    "born_step": 866,
-    "died_step": 1298,
+  "d22a4d65": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 9201,
+    "died_step": 9429,
     "cause": "predation_2hit",
-    "fitness": 43.2
+    "fitness": 22.8
   },
-  "e4a5d7b5": {
-    "generation": 9,
-    "parent_ids": [
-      "cb05631b",
-      "51dc8478"
-    ],
-    "born_step": 880,
-    "died_step": 2216,
+  "52915f13": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 9429,
+    "died_step": 13106,
     "cause": "predation_2hit",
-    "fitness": 188.6
+    "fitness": 397.70000000000005
   },
-  "63ac200f": {
-    "generation": 9,
-    "parent_ids": [
-      "cb05631b",
-      "51dc8478"
-    ],
-    "born_step": 880,
-    "died_step": 1719,
-    "cause": "starvation",
-    "fitness": 83.9
-  },
-  "8e0ee6cc": {
-    "generation": 8,
-    "parent_ids": [
-      "5e9df133",
-      "58ba6099"
-    ],
-    "born_step": 881,
-    "died_step": 2665,
-    "cause": "starvation",
-    "fitness": 233.4
-  },
-  "6a31ce89": {
-    "generation": 8,
-    "parent_ids": [
-      "5e9df133",
-      "58ba6099"
-    ],
-    "born_step": 881,
-    "died_step": 3873,
-    "cause": "starvation",
-    "fitness": 329.2
-  },
-  "dabe9bb6": {
-    "generation": 10,
-    "parent_ids": [
-      "5f6976ab",
-      "5d1fab37"
-    ],
-    "born_step": 891,
-    "died_step": 3867,
-    "cause": "starvation",
-    "fitness": 302.6
-  },
-  "8756d96d": {
-    "generation": 10,
-    "parent_ids": [
-      "5f6976ab",
-      "5d1fab37"
-    ],
-    "born_step": 891,
-    "died_step": 2171,
-    "cause": "starvation",
-    "fitness": 128.0
-  },
-  "6d744067": {
-    "generation": 8,
-    "parent_ids": [
-      "d6068339",
-      "dafbe154"
-    ],
-    "born_step": 943,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "6117bb61": {
-    "generation": 8,
-    "parent_ids": [
-      "d6068339",
-      "dafbe154"
-    ],
-    "born_step": 943,
-    "died_step": 5335,
+  "f74aa867": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 9748,
+    "died_step": 15539,
     "cause": "predation_2hit",
-    "fitness": 749.2
+    "fitness": 609.1
   },
-  "d7794444": {
-    "generation": 9,
-    "parent_ids": [
-      "b7fe8f67",
-      "cbd2ab70"
-    ],
-    "born_step": 966,
-    "died_step": 2500,
-    "cause": "starvation",
-    "fitness": 158.4
-  },
-  "e3bd3f13": {
-    "generation": 9,
-    "parent_ids": [
-      "b7fe8f67",
-      "cbd2ab70"
-    ],
-    "born_step": 966,
-    "died_step": 1933,
-    "cause": "starvation",
-    "fitness": 106.7
-  },
-  "d3739b61": {
-    "generation": 9,
-    "parent_ids": [
-      "cb05631b",
-      "aadafe97"
-    ],
-    "born_step": 980,
-    "died_step": 3975,
-    "cause": "starvation",
-    "fitness": 329.5
-  },
-  "125669f6": {
-    "generation": 9,
-    "parent_ids": [
-      "cb05631b",
-      "aadafe97"
-    ],
-    "born_step": 980,
-    "died_step": 3138,
-    "cause": "starvation",
-    "fitness": 220.8
-  },
-  "ebb6970c": {
-    "generation": 8,
-    "parent_ids": [
-      "5e9df133",
-      "58ba6099"
-    ],
-    "born_step": 981,
-    "died_step": 1705,
+  "987bf05a": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 9943,
+    "died_step": 10084,
     "cause": "predation_2hit",
-    "fitness": 127.4
+    "fitness": 14.100000000000001
   },
-  "7eb6a17c": {
-    "generation": 8,
-    "parent_ids": [
-      "5e9df133",
-      "58ba6099"
-    ],
-    "born_step": 981,
-    "died_step": 1807,
-    "cause": "predation_1hit",
-    "fitness": 82.60000000000001
+  "2118f653": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 10084,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
   },
-  "b61186b6": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "6ae819ae"
-    ],
-    "born_step": 1013,
-    "died_step": 1627,
+  "cbbd7127": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 11802,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
+  },
+  "56974cea": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 12751,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
+  },
+  "20485ab6": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 13106,
+    "died_step": 14907,
     "cause": "predation_2hit",
-    "fitness": 66.4
+    "fitness": 220.10000000000002
   },
-  "78300741": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "6ae819ae"
-    ],
-    "born_step": 1013,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "e65f0e4e": {
-    "generation": 9,
-    "parent_ids": [
-      "e3d41cf6",
-      "36514b82"
-    ],
-    "born_step": 1033,
-    "died_step": 3979,
-    "cause": "starvation",
-    "fitness": 329.6
-  },
-  "247322be": {
-    "generation": 9,
-    "parent_ids": [
-      "e3d41cf6",
-      "36514b82"
-    ],
-    "born_step": 1033,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "301e224e": {
-    "generation": 8,
-    "parent_ids": [
-      "d6068339",
-      "dafbe154"
-    ],
-    "born_step": 1043,
-    "died_step": 5085,
+  "9329b526": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 13360,
+    "died_step": 13541,
     "cause": "predation_2hit",
-    "fitness": 524.2
+    "fitness": 18.1
   },
-  "68dc7b63": {
-    "generation": 8,
-    "parent_ids": [
-      "d6068339",
-      "dafbe154"
-    ],
-    "born_step": 1043,
-    "died_step": 5889,
+  "8812ea92": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 13541,
+    "died_step": 13692,
     "cause": "predation_2hit",
-    "fitness": 654.6
+    "fitness": 15.100000000000001
   },
-  "b6d702db": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "6ae819ae"
-    ],
-    "born_step": 1113,
-    "died_step": 4264,
-    "cause": "starvation",
-    "fitness": 345.1
-  },
-  "68544808": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "6ae819ae"
-    ],
-    "born_step": 1113,
-    "died_step": 7132,
-    "cause": "starvation",
-    "fitness": 711.9
-  },
-  "bea34bb5": {
-    "generation": 9,
-    "parent_ids": [
-      "7e36dc9a",
-      "cbd2ab70"
-    ],
-    "born_step": 1122,
-    "died_step": 2117,
-    "cause": "starvation",
-    "fitness": 99.5
-  },
-  "e47b8861": {
-    "generation": 9,
-    "parent_ids": [
-      "7e36dc9a",
-      "cbd2ab70"
-    ],
-    "born_step": 1122,
-    "died_step": 2568,
-    "cause": "starvation",
-    "fitness": 199.6
-  },
-  "a5277aec": {
-    "generation": 10,
-    "parent_ids": [
-      "349df851",
-      "9ad59aa5"
-    ],
-    "born_step": 1131,
-    "died_step": 5914,
-    "cause": "starvation",
-    "fitness": 538.3
-  },
-  "292f3d09": {
-    "generation": 10,
-    "parent_ids": [
-      "349df851",
-      "9ad59aa5"
-    ],
-    "born_step": 1131,
-    "died_step": 2573,
+  "7169a231": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 13692,
+    "died_step": 15743,
     "cause": "predation_2hit",
-    "fitness": 159.20000000000002
+    "fitness": 250.10000000000002
   },
-  "37cc29e6": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "8e0ee6cc"
-    ],
-    "born_step": 1133,
-    "died_step": 2393,
-    "cause": "starvation",
-    "fitness": 126.0
+  "7927c57a": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 14539,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
   },
-  "4b5729e2": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "8e0ee6cc"
-    ],
-    "born_step": 1133,
-    "died_step": 2569,
+  "e1e55c15": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 14907,
+    "died_step": null,
+    "cause": null,
+    "fitness": null
+  },
+  "c932438f": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 15052,
+    "died_step": 16163,
     "cause": "predation_2hit",
-    "fitness": 203.6
+    "fitness": 131.10000000000002
   },
-  "3f895068": {
-    "generation": 9,
-    "parent_ids": [
-      "36514b82",
-      "78300741"
-    ],
-    "born_step": 1210,
-    "died_step": 5555,
-    "cause": "starvation",
-    "fitness": 444.5
-  },
-  "3b1288b3": {
-    "generation": 9,
-    "parent_ids": [
-      "36514b82",
-      "78300741"
-    ],
-    "born_step": 1210,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "9ef383b9": {
-    "generation": 8,
-    "parent_ids": [
-      "e3d41cf6",
-      "6ae819ae"
-    ],
-    "born_step": 1213,
-    "died_step": 3970,
-    "cause": "starvation",
-    "fitness": 280.7
-  },
-  "fb63d09b": {
-    "generation": 8,
-    "parent_ids": [
-      "e3d41cf6",
-      "6ae819ae"
-    ],
-    "born_step": 1213,
-    "died_step": 3818,
-    "cause": "starvation",
-    "fitness": 365.5
-  },
-  "050fdcd3": {
-    "generation": 10,
-    "parent_ids": [
-      "5e9df133",
-      "e0db88fc"
-    ],
-    "born_step": 1233,
-    "died_step": 4611,
-    "cause": "starvation",
-    "fitness": 397.8
-  },
-  "25001965": {
-    "generation": 10,
-    "parent_ids": [
-      "5e9df133",
-      "e0db88fc"
-    ],
-    "born_step": 1233,
-    "died_step": 1977,
-    "cause": "starvation",
-    "fitness": 74.4
-  },
-  "79136dad": {
-    "generation": 10,
-    "parent_ids": [
-      "5d1fab37",
-      "ebb6970c"
-    ],
-    "born_step": 1235,
-    "died_step": 1829,
-    "cause": "starvation",
-    "fitness": 59.400000000000006
-  },
-  "5c807842": {
-    "generation": 10,
-    "parent_ids": [
-      "5d1fab37",
-      "ebb6970c"
-    ],
-    "born_step": 1235,
-    "died_step": 6295,
-    "cause": "starvation",
-    "fitness": 521.0
-  },
-  "7522306e": {
-    "generation": 9,
-    "parent_ids": [
-      "d6068339",
-      "301e224e"
-    ],
-    "born_step": 1248,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "4edb272f": {
-    "generation": 9,
-    "parent_ids": [
-      "d6068339",
-      "301e224e"
-    ],
-    "born_step": 1248,
-    "died_step": 4580,
-    "cause": "starvation",
-    "fitness": 338.20000000000005
-  },
-  "d72c7a10": {
-    "generation": 10,
-    "parent_ids": [
-      "dafbe154",
-      "e47b8861"
-    ],
-    "born_step": 1260,
-    "died_step": 2408,
-    "cause": "predation_1hit",
-    "fitness": 114.80000000000001
-  },
-  "997ead93": {
-    "generation": 10,
-    "parent_ids": [
-      "dafbe154",
-      "e47b8861"
-    ],
-    "born_step": 1260,
-    "died_step": 2103,
-    "cause": "starvation",
-    "fitness": 89.30000000000001
-  },
-  "fef2b43a": {
-    "generation": 10,
-    "parent_ids": [
-      "e691a5e7",
-      "e4a5d7b5"
-    ],
-    "born_step": 1271,
-    "died_step": 2107,
-    "cause": "starvation",
-    "fitness": 83.60000000000001
-  },
-  "7ed088aa": {
-    "generation": 10,
-    "parent_ids": [
-      "e691a5e7",
-      "e4a5d7b5"
-    ],
-    "born_step": 1271,
-    "died_step": 1976,
-    "cause": "predation_2hit",
-    "fitness": 70.5
-  },
-  "789c78c0": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "d8ecbf46"
-    ],
-    "born_step": 1293,
-    "died_step": 3872,
-    "cause": "starvation",
-    "fitness": 257.90000000000003
-  },
-  "0ce815c7": {
-    "generation": 8,
-    "parent_ids": [
-      "77a17003",
-      "d8ecbf46"
-    ],
-    "born_step": 1293,
-    "died_step": 5168,
-    "cause": "starvation",
-    "fitness": 497.5
-  },
-  "280cd1c4": {
-    "generation": 10,
-    "parent_ids": [
-      "0eaa23d0",
-      "7522306e"
-    ],
-    "born_step": 1293,
-    "died_step": 6584,
-    "cause": "predation_1hit",
-    "fitness": 569.1
-  },
-  "9711ef3d": {
-    "generation": 10,
-    "parent_ids": [
-      "0eaa23d0",
-      "7522306e"
-    ],
-    "born_step": 1293,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "981385d7": {
-    "generation": 9,
-    "parent_ids": [
-      "a70ae29f",
-      "6d744067"
-    ],
-    "born_step": 1295,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "f760a212": {
-    "generation": 9,
-    "parent_ids": [
-      "a70ae29f",
-      "6d744067"
-    ],
-    "born_step": 1295,
-    "died_step": 7350,
-    "cause": "starvation",
-    "fitness": 790.5
-  },
-  "d14c21d9": {
-    "generation": 9,
-    "parent_ids": [
-      "e3d41cf6",
-      "9ad59aa5"
-    ],
-    "born_step": 1313,
-    "died_step": 4346,
-    "cause": "starvation",
-    "fitness": 333.3
-  },
-  "a6b6c535": {
-    "generation": 9,
-    "parent_ids": [
-      "e3d41cf6",
-      "9ad59aa5"
-    ],
-    "born_step": 1313,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "10b3d21b": {
-    "generation": 10,
-    "parent_ids": [
-      "5d1fab37",
-      "ebb6970c"
-    ],
-    "born_step": 1335,
-    "died_step": 2121,
-    "cause": "predation_2hit",
-    "fitness": 83.60000000000001
-  },
-  "188fb85c": {
-    "generation": 10,
-    "parent_ids": [
-      "5d1fab37",
-      "ebb6970c"
-    ],
-    "born_step": 1335,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "c374dd3e": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "88e12aee"
-    ],
-    "born_step": 1358,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "4c7c7eba": {
-    "generation": 8,
-    "parent_ids": [
-      "6ae819ae",
-      "88e12aee"
-    ],
-    "born_step": 1358,
-    "died_step": 1830,
-    "cause": "predation_2hit",
-    "fitness": 47.2
-  },
-  "ae109f3f": {
-    "generation": 10,
-    "parent_ids": [
-      "dafbe154",
-      "3d4a557e"
-    ],
-    "born_step": 1404,
-    "died_step": 7671,
-    "cause": "starvation",
-    "fitness": 701.7
-  },
-  "3bf50835": {
-    "generation": 10,
-    "parent_ids": [
-      "e3d41cf6",
-      "a6b6c535"
-    ],
-    "born_step": 1442,
-    "died_step": 5688,
-    "cause": "starvation",
-    "fitness": 434.6
-  },
-  "f36a84de": {
-    "generation": 8,
-    "parent_ids": [
-      "2b4457b3",
-      "5e9df133"
-    ],
-    "born_step": 1471,
-    "died_step": 7654,
-    "cause": "starvation",
-    "fitness": 683.3000000000001
-  },
-  "f5a9dbe9": {
-    "generation": 9,
-    "parent_ids": [
-      "98665d51",
-      "8e0ee6cc"
-    ],
-    "born_step": 1552,
-    "died_step": 2607,
-    "cause": "starvation",
-    "fitness": 110.5
-  },
-  "6cfad8c1": {
-    "generation": 9,
-    "parent_ids": [
-      "98665d51",
-      "8e0ee6cc"
-    ],
-    "born_step": 1552,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "02efd26b": {
-    "generation": 9,
-    "parent_ids": [
-      "1fb42651",
-      "68dc7b63"
-    ],
-    "born_step": 1562,
-    "died_step": 5128,
-    "cause": "predation_2hit",
-    "fitness": 406.6
-  },
-  "12e2df9b": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "98665d51"
-    ],
-    "born_step": 1652,
-    "died_step": 5268,
-    "cause": "starvation",
-    "fitness": 366.6
-  },
-  "cd64f471": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "98665d51"
-    ],
-    "born_step": 1652,
-    "died_step": 4677,
-    "cause": "predation_2hit",
-    "fitness": 367.5
-  },
-  "afc1a8d5": {
-    "generation": 10,
-    "parent_ids": [
-      "69b7149f",
-      "3d4a557e"
-    ],
-    "born_step": 1692,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "cdb11779": {
-    "generation": 11,
-    "parent_ids": [
-      "d5e3877c",
-      "ae109f3f"
-    ],
-    "born_step": 1713,
-    "died_step": 3581,
-    "cause": "starvation",
-    "fitness": 186.8
-  },
-  "891605db": {
-    "generation": 10,
-    "parent_ids": [
-      "68544808",
-      "3b1288b3"
-    ],
-    "born_step": 1747,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d79d892c": {
-    "generation": 9,
-    "parent_ids": [
-      "dafbe154",
-      "6117bb61"
-    ],
-    "born_step": 1762,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "15d55243": {
-    "generation": 9,
-    "parent_ids": [
-      "14bf8977",
-      "0ce815c7"
-    ],
-    "born_step": 1771,
-    "died_step": 2116,
-    "cause": "predation_2hit",
-    "fitness": 34.5
-  },
-  "43400c26": {
-    "generation": 9,
-    "parent_ids": [
-      "14bf8977",
-      "0ce815c7"
-    ],
-    "born_step": 1771,
-    "died_step": 6548,
-    "cause": "starvation",
-    "fitness": 512.7
-  },
-  "d4fca819": {
-    "generation": 8,
-    "parent_ids": [
-      "69b7149f",
-      "d6068339"
-    ],
-    "born_step": 1807,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "83a9259c": {
-    "generation": 8,
-    "parent_ids": [
-      "69b7149f",
-      "d6068339"
-    ],
-    "born_step": 1807,
-    "died_step": 7992,
-    "cause": "predation_2hit",
-    "fitness": 813.5
-  },
-  "55e58655": {
-    "generation": 11,
-    "parent_ids": [
-      "d5e3877c",
-      "ae109f3f"
-    ],
-    "born_step": 1813,
-    "died_step": 4621,
-    "cause": "starvation",
-    "fitness": 285.8
-  },
-  "283acec0": {
-    "generation": 11,
-    "parent_ids": [
-      "d5e3877c",
-      "ae109f3f"
-    ],
-    "born_step": 1813,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "1e4f578c": {
-    "generation": 11,
-    "parent_ids": [
-      "301e224e",
-      "a5277aec"
-    ],
-    "born_step": 1825,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "6b72effb": {
-    "generation": 9,
-    "parent_ids": [
-      "dafbe154",
-      "1fb42651"
-    ],
-    "born_step": 1862,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d32425c1": {
-    "generation": 9,
-    "parent_ids": [
-      "dafbe154",
-      "1fb42651"
-    ],
-    "born_step": 1862,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "b71ffce8": {
-    "generation": 10,
-    "parent_ids": [
-      "3b1288b3",
-      "0ce815c7"
-    ],
-    "born_step": 1938,
-    "died_step": 2410,
-    "cause": "predation_2hit",
-    "fitness": 47.2
-  },
-  "9a80f236": {
-    "generation": 10,
-    "parent_ids": [
-      "3b1288b3",
-      "0ce815c7"
-    ],
-    "born_step": 1938,
-    "died_step": 4133,
-    "cause": "starvation",
-    "fitness": 224.5
-  },
-  "14a32e71": {
-    "generation": 10,
-    "parent_ids": [
-      "1fb42651",
-      "4b5729e2"
-    ],
-    "born_step": 1962,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "92440c69": {
-    "generation": 11,
-    "parent_ids": [
-      "5279bd97",
-      "a5277aec"
-    ],
-    "born_step": 1977,
-    "died_step": 3589,
-    "cause": "starvation",
-    "fitness": 161.20000000000002
-  },
-  "a9b3d7c6": {
-    "generation": 11,
-    "parent_ids": [
-      "5279bd97",
-      "a5277aec"
-    ],
-    "born_step": 1977,
-    "died_step": 6012,
-    "cause": "starvation",
-    "fitness": 408.5
-  },
-  "ac4a9722": {
-    "generation": 11,
-    "parent_ids": [
-      "0eaa23d0",
-      "050fdcd3"
-    ],
-    "born_step": 1997,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "09423398": {
-    "generation": 9,
-    "parent_ids": [
-      "0eaa23d0",
-      "6d744067"
-    ],
-    "born_step": 2121,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "1f75dec1": {
-    "generation": 9,
-    "parent_ids": [
-      "0eaa23d0",
-      "6d744067"
-    ],
-    "born_step": 2121,
-    "died_step": 4829,
-    "cause": "predation_2hit",
-    "fitness": 330.8
-  },
-  "064ac944": {
-    "generation": 10,
-    "parent_ids": [
-      "3d4a557e",
-      "6cfad8c1"
-    ],
-    "born_step": 2126,
-    "died_step": 5523,
-    "cause": "starvation",
-    "fitness": 349.70000000000005
-  },
-  "e9ab6553": {
-    "generation": 10,
-    "parent_ids": [
-      "3d4a557e",
-      "6cfad8c1"
-    ],
-    "born_step": 2126,
-    "died_step": 3557,
-    "cause": "starvation",
-    "fitness": 148.1
-  },
-  "6c697c29": {
-    "generation": 10,
-    "parent_ids": [
-      "a70ae29f",
-      "6b72effb"
-    ],
-    "born_step": 2195,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "e994070a": {
-    "generation": 10,
-    "parent_ids": [
-      "a70ae29f",
-      "6b72effb"
-    ],
-    "born_step": 2195,
-    "died_step": 4568,
-    "cause": "starvation",
-    "fitness": 287.3
-  },
-  "93998d62": {
-    "generation": 9,
-    "parent_ids": [
-      "aadafe97",
-      "98665d51"
-    ],
-    "born_step": 2200,
-    "died_step": 5868,
-    "cause": "starvation",
-    "fitness": 401.8
-  },
-  "9f6bb648": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "0eaa23d0"
-    ],
-    "born_step": 2221,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "a185349f": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "0eaa23d0"
-    ],
-    "born_step": 2221,
-    "died_step": 4097,
-    "cause": "starvation",
-    "fitness": 187.60000000000002
-  },
-  "5246ee2f": {
-    "generation": 9,
-    "parent_ids": [
-      "69b7149f",
-      "aadafe97"
-    ],
-    "born_step": 2300,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "71c9a8bc": {
-    "generation": 9,
-    "parent_ids": [
-      "69b7149f",
-      "aadafe97"
-    ],
-    "born_step": 2300,
-    "died_step": 5333,
-    "cause": "predation_2hit",
-    "fitness": 433.3
-  },
-  "dfec9d23": {
-    "generation": 12,
-    "parent_ids": [
-      "77a17003",
-      "1e4f578c"
-    ],
-    "born_step": 2355,
-    "died_step": 5208,
-    "cause": "starvation",
-    "fitness": 315.3
-  },
-  "a8b7a79f": {
-    "generation": 11,
-    "parent_ids": [
-      "0eaa23d0",
-      "afc1a8d5"
-    ],
-    "born_step": 2397,
-    "died_step": 4408,
-    "cause": "starvation",
-    "fitness": 256.1
-  },
-  "cbd1a6f0": {
-    "generation": 10,
-    "parent_ids": [
-      "3d4a557e",
-      "6cfad8c1"
-    ],
-    "born_step": 2434,
-    "died_step": 3401,
-    "cause": "starvation",
-    "fitness": 96.7
-  },
-  "87a013ca": {
-    "generation": 10,
-    "parent_ids": [
-      "3d4a557e",
-      "6cfad8c1"
-    ],
-    "born_step": 2434,
-    "died_step": 4220,
-    "cause": "starvation",
-    "fitness": 178.60000000000002
-  },
-  "33e958cc": {
-    "generation": 11,
-    "parent_ids": [
-      "a6b6c535",
-      "e994070a"
-    ],
-    "born_step": 2461,
-    "died_step": 4919,
-    "cause": "starvation",
-    "fitness": 250.8
-  },
-  "f3b8dabe": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "0eaa23d0"
-    ],
-    "born_step": 2497,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "e5142dad": {
-    "generation": 9,
-    "parent_ids": [
-      "14bf8977",
-      "36514b82"
-    ],
-    "born_step": 2502,
-    "died_step": 5286,
-    "cause": "starvation",
-    "fitness": 278.40000000000003
-  },
-  "df99dd24": {
-    "generation": 9,
-    "parent_ids": [
-      "a70ae29f",
-      "aadafe97"
-    ],
-    "born_step": 2580,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "661c7724": {
-    "generation": 9,
-    "parent_ids": [
-      "a70ae29f",
-      "aadafe97"
-    ],
-    "born_step": 2580,
-    "died_step": 7092,
-    "cause": "starvation",
-    "fitness": 466.20000000000005
-  },
-  "1283633c": {
-    "generation": 9,
-    "parent_ids": [
-      "69b7149f",
-      "98665d51"
-    ],
-    "born_step": 2583,
-    "died_step": 6755,
-    "cause": "starvation",
-    "fitness": 427.20000000000005
-  },
-  "53416ee4": {
-    "generation": 10,
-    "parent_ids": [
-      "5279bd97",
-      "71c9a8bc"
-    ],
-    "born_step": 2623,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "1910a681": {
-    "generation": 11,
-    "parent_ids": [
-      "afc1a8d5",
-      "f3b8dabe"
-    ],
-    "born_step": 2667,
-    "died_step": 4103,
-    "cause": "starvation",
-    "fitness": 193.6
-  },
-  "fd94b301": {
-    "generation": 13,
-    "parent_ids": [
-      "78300741",
-      "dfec9d23"
-    ],
-    "born_step": 2794,
-    "died_step": 6147,
-    "cause": "starvation",
-    "fitness": 340.3
-  },
-  "62031536": {
-    "generation": 13,
-    "parent_ids": [
-      "78300741",
-      "dfec9d23"
-    ],
-    "born_step": 2794,
-    "died_step": 5535,
-    "cause": "predation_2hit",
-    "fitness": 284.1
-  },
-  "75b347df": {
-    "generation": 10,
-    "parent_ids": [
-      "98665d51",
-      "f760a212"
-    ],
-    "born_step": 2982,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "b95d717d": {
-    "generation": 9,
-    "parent_ids": [
-      "5e9df133",
-      "6d744067"
-    ],
-    "born_step": 3106,
-    "died_step": 6584,
-    "cause": "predation_1hit",
-    "fitness": 382.8
-  },
-  "6487a490": {
-    "generation": 12,
-    "parent_ids": [
-      "c878729e",
-      "ac4a9722"
-    ],
-    "born_step": 3145,
-    "died_step": 3880,
-    "cause": "starvation",
-    "fitness": 73.5
-  },
-  "e0d110c7": {
-    "generation": 9,
-    "parent_ids": [
-      "1fb42651",
-      "78300741"
-    ],
-    "born_step": 3236,
-    "died_step": 6029,
-    "cause": "predation_2hit",
-    "fitness": 294.3
-  },
-  "9955e14a": {
-    "generation": 10,
-    "parent_ids": [
-      "6117bb61",
-      "d32425c1"
-    ],
-    "born_step": 3366,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0bfe7eac": {
-    "generation": 10,
-    "parent_ids": [
-      "6117bb61",
-      "d32425c1"
-    ],
-    "born_step": 3366,
-    "died_step": 6265,
-    "cause": "predation_2hit",
-    "fitness": 354.90000000000003
-  },
-  "ae5bcb56": {
-    "generation": 10,
-    "parent_ids": [
-      "78300741",
-      "d79d892c"
-    ],
-    "born_step": 3410,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0336ec6c": {
-    "generation": 10,
-    "parent_ids": [
-      "247322be",
-      "71c9a8bc"
-    ],
-    "born_step": 3479,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d9e2b2f5": {
-    "generation": 11,
-    "parent_ids": [
-      "b51c3d4b",
-      "afc1a8d5"
-    ],
-    "born_step": 3573,
-    "died_step": 6022,
-    "cause": "starvation",
-    "fitness": 254.9
-  },
-  "1dec079c": {
-    "generation": 10,
-    "parent_ids": [
-      "247322be",
-      "6cfad8c1"
-    ],
-    "born_step": 3592,
-    "died_step": 7112,
-    "cause": "starvation",
-    "fitness": 357.0
-  },
-  "151f7902": {
-    "generation": 10,
-    "parent_ids": [
-      "247322be",
-      "6cfad8c1"
-    ],
-    "born_step": 3592,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0e85b313": {
-    "generation": 12,
-    "parent_ids": [
-      "188fb85c",
-      "ac4a9722"
-    ],
-    "born_step": 3659,
-    "died_step": 8013,
-    "cause": "starvation",
-    "fitness": 440.40000000000003
-  },
-  "7e9ab128": {
-    "generation": 2,
-    "parent_ids": [
-      "5f6976ab",
-      "11445e9a"
-    ],
-    "born_step": 3830,
-    "died_step": 4479,
-    "cause": "predation_2hit",
-    "fitness": 69.9
-  },
-  "498630d7": {
-    "generation": 9,
-    "parent_ids": [
-      "a70ae29f",
-      "c374dd3e"
-    ],
-    "born_step": 3889,
-    "died_step": 6448,
-    "cause": "predation_2hit",
-    "fitness": 270.9
-  },
-  "aed9184a": {
-    "generation": 9,
-    "parent_ids": [
-      "a70ae29f",
-      "c374dd3e"
-    ],
-    "born_step": 3889,
-    "died_step": 4589,
-    "cause": "predation_2hit",
-    "fitness": 75.0
-  },
-  "22ba3b2c": {
-    "generation": 10,
-    "parent_ids": [
-      "5279bd97",
-      "f760a212"
-    ],
-    "born_step": 3917,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0c414f0d": {
-    "generation": 10,
-    "parent_ids": [
-      "5279bd97",
-      "f760a212"
-    ],
-    "born_step": 3917,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "8b0421bb": {
-    "generation": 10,
-    "parent_ids": [
-      "68dc7b63",
-      "d32425c1"
-    ],
-    "born_step": 3941,
-    "died_step": 7863,
-    "cause": "starvation",
-    "fitness": 407.20000000000005
-  },
-  "83f603f6": {
-    "generation": 11,
-    "parent_ids": [
-      "dafbe154",
-      "0336ec6c"
-    ],
-    "born_step": 4031,
-    "died_step": 6716,
-    "cause": "predation_1hit",
-    "fitness": 273.5
-  },
-  "25542613": {
-    "generation": 11,
-    "parent_ids": [
-      "dafbe154",
-      "0336ec6c"
-    ],
-    "born_step": 4031,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "b43f7945": {
-    "generation": 10,
-    "parent_ids": [
-      "d79d892c",
-      "d32425c1"
-    ],
-    "born_step": 4041,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "fed8f0c6": {
-    "generation": 10,
-    "parent_ids": [
-      "6117bb61",
-      "7522306e"
-    ],
-    "born_step": 4109,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "9077e735": {
-    "generation": 10,
-    "parent_ids": [
-      "6117bb61",
-      "7522306e"
-    ],
-    "born_step": 4109,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "7daaeb15": {
-    "generation": 10,
-    "parent_ids": [
-      "6d744067",
-      "f3b8dabe"
-    ],
-    "born_step": 4142,
-    "died_step": 5193,
-    "cause": "predation_2hit",
-    "fitness": 210.10000000000002
-  },
-  "19d3f93e": {
-    "generation": 10,
-    "parent_ids": [
-      "6d744067",
-      "9f6bb648"
-    ],
-    "born_step": 4242,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "fe4f3cce": {
-    "generation": 9,
-    "parent_ids": [
-      "11445e9a",
-      "caada65a"
-    ],
-    "born_step": 4290,
-    "died_step": 5390,
-    "cause": "starvation",
-    "fitness": 110.0
-  },
-  "b46aaf77": {
-    "generation": 10,
-    "parent_ids": [
-      "5279bd97",
-      "247322be"
-    ],
-    "born_step": 4338,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "3d938e41": {
-    "generation": 11,
-    "parent_ids": [
-      "83a9259c",
-      "7daaeb15"
-    ],
-    "born_step": 4351,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "36ab8784": {
-    "generation": 11,
-    "parent_ids": [
-      "83a9259c",
-      "7daaeb15"
-    ],
-    "born_step": 4351,
-    "died_step": 7287,
-    "cause": "starvation",
-    "fitness": 323.6
-  },
-  "7d162780": {
-    "generation": 9,
-    "parent_ids": [
-      "14bf8977",
-      "68dc7b63"
-    ],
-    "born_step": 4406,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "85db8390": {
-    "generation": 10,
-    "parent_ids": [
-      "f760a212",
-      "83a9259c"
-    ],
-    "born_step": 4451,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "3f03d9f0": {
-    "generation": 11,
-    "parent_ids": [
-      "6b72effb",
-      "53416ee4"
-    ],
-    "born_step": 4490,
-    "died_step": 6404,
-    "cause": "predation_2hit",
-    "fitness": 196.4
-  },
-  "cb6914fa": {
-    "generation": 11,
-    "parent_ids": [
-      "68dc7b63",
-      "0bfe7eac"
-    ],
-    "born_step": 4532,
-    "died_step": 6432,
-    "cause": "starvation",
-    "fitness": 195.0
-  },
-  "0ab6f873": {
-    "generation": 11,
-    "parent_ids": [
-      "68dc7b63",
-      "0bfe7eac"
-    ],
-    "born_step": 4532,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "fd72837b": {
-    "generation": 11,
-    "parent_ids": [
-      "7daaeb15",
-      "b46aaf77"
-    ],
-    "born_step": 4574,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d0cdedcf": {
-    "generation": 11,
-    "parent_ids": [
-      "f3b8dabe",
-      "0c414f0d"
-    ],
-    "born_step": 4583,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d4a2a460": {
-    "generation": 10,
-    "parent_ids": [
-      "78300741",
-      "7522306e"
-    ],
-    "born_step": 4595,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "a72fd9bb": {
-    "generation": 11,
-    "parent_ids": [
-      "d5e3877c",
-      "b43f7945"
-    ],
-    "born_step": 4621,
-    "died_step": 6369,
-    "cause": "starvation",
-    "fitness": 179.8
-  },
-  "d5b3821e": {
-    "generation": 11,
-    "parent_ids": [
-      "d5e3877c",
-      "b43f7945"
-    ],
-    "born_step": 4621,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d182357e": {
-    "generation": 11,
-    "parent_ids": [
-      "6117bb61",
-      "85db8390"
-    ],
-    "born_step": 4626,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "e89e832c": {
-    "generation": 10,
-    "parent_ids": [
-      "caada65a",
-      "f3b8dabe"
-    ],
-    "born_step": 4683,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "89cb4385": {
-    "generation": 10,
-    "parent_ids": [
-      "6117bb61",
-      "7522306e"
-    ],
-    "born_step": 4840,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "bd70c736": {
-    "generation": 10,
-    "parent_ids": [
-      "6117bb61",
-      "7522306e"
-    ],
-    "born_step": 4840,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "8a7446ba": {
-    "generation": 11,
-    "parent_ids": [
-      "d4fca819",
-      "0c414f0d"
-    ],
-    "born_step": 4959,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "ca60be2f": {
-    "generation": 12,
-    "parent_ids": [
-      "0a6478b0",
-      "d182357e"
-    ],
-    "born_step": 5102,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "03f5560c": {
-    "generation": 12,
-    "parent_ids": [
-      "0a6478b0",
-      "d182357e"
-    ],
-    "born_step": 5102,
-    "died_step": 7466,
-    "cause": "starvation",
-    "fitness": 236.4
-  },
-  "e08c5d1d": {
-    "generation": 11,
-    "parent_ids": [
-      "6b72effb",
-      "85db8390"
-    ],
-    "born_step": 5138,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "8d6036a6": {
-    "generation": 11,
-    "parent_ids": [
-      "3b1288b3",
-      "9077e735"
-    ],
-    "born_step": 5169,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "93c84130": {
-    "generation": 12,
-    "parent_ids": [
-      "d5b3821e",
-      "d182357e"
-    ],
-    "born_step": 5218,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "a5ccecc7": {
-    "generation": 12,
-    "parent_ids": [
-      "d5b3821e",
-      "d182357e"
-    ],
-    "born_step": 5218,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d59723e9": {
-    "generation": 10,
-    "parent_ids": [
-      "68dc7b63",
-      "7d162780"
-    ],
-    "born_step": 5273,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "dba96add": {
-    "generation": 10,
-    "parent_ids": [
-      "68dc7b63",
-      "7d162780"
-    ],
-    "born_step": 5273,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "026a593e": {
-    "generation": 12,
-    "parent_ids": [
-      "afc1a8d5",
-      "d0cdedcf"
-    ],
-    "born_step": 5292,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "978c98f9": {
-    "generation": 11,
-    "parent_ids": [
-      "6b72effb",
-      "9077e735"
-    ],
-    "born_step": 5352,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "3fbd3eed": {
-    "generation": 11,
-    "parent_ids": [
-      "6b72effb",
-      "9077e735"
-    ],
-    "born_step": 5352,
-    "died_step": 6998,
-    "cause": "starvation",
-    "fitness": 169.60000000000002
-  },
-  "9a5c34e7": {
-    "generation": 10,
-    "parent_ids": [
-      "247322be",
-      "7522306e"
-    ],
-    "born_step": 5414,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "a72b577b": {
-    "generation": 10,
-    "parent_ids": [
-      "247322be",
-      "7522306e"
-    ],
-    "born_step": 5414,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "259e555f": {
-    "generation": 11,
-    "parent_ids": [
-      "d32425c1",
-      "ae5bcb56"
-    ],
-    "born_step": 5441,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "637e5c1f": {
-    "generation": 12,
-    "parent_ids": [
-      "981385d7",
-      "ac4a9722"
-    ],
-    "born_step": 5565,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "a26e7bef": {
-    "generation": 12,
-    "parent_ids": [
-      "981385d7",
-      "ac4a9722"
-    ],
-    "born_step": 5565,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0676bdd6": {
-    "generation": 11,
-    "parent_ids": [
-      "0eaa23d0",
-      "75b347df"
-    ],
-    "born_step": 5599,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "6c6daf4f": {
-    "generation": 11,
-    "parent_ids": [
-      "0eaa23d0",
-      "75b347df"
-    ],
-    "born_step": 5599,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "f7fabc5f": {
-    "generation": 12,
-    "parent_ids": [
-      "d5e3877c",
-      "283acec0"
-    ],
-    "born_step": 5648,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "3e5fde2e": {
-    "generation": 11,
-    "parent_ids": [
-      "d32425c1",
-      "9077e735"
-    ],
-    "born_step": 5718,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "5f547b39": {
-    "generation": 10,
-    "parent_ids": [
-      "7522306e",
-      "83a9259c"
-    ],
-    "born_step": 5903,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "d7014a43": {
-    "generation": 10,
-    "parent_ids": [
-      "7522306e",
-      "83a9259c"
-    ],
-    "born_step": 5903,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "ec14c0ff": {
-    "generation": 12,
-    "parent_ids": [
-      "53416ee4",
-      "d182357e"
-    ],
-    "born_step": 5938,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "6e808671": {
-    "generation": 12,
-    "parent_ids": [
-      "d32425c1",
-      "d182357e"
-    ],
-    "born_step": 6042,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "a697e6a2": {
-    "generation": 12,
-    "parent_ids": [
-      "d32425c1",
-      "d182357e"
-    ],
-    "born_step": 6042,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "dc0ef867": {
-    "generation": 10,
-    "parent_ids": [
-      "7522306e",
-      "d79d892c"
-    ],
-    "born_step": 6084,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "fbab0908": {
-    "generation": 12,
-    "parent_ids": [
-      "0bfe7eac",
-      "d0cdedcf"
-    ],
-    "born_step": 6174,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "9b66d6ab": {
-    "generation": 13,
-    "parent_ids": [
-      "d79d892c",
-      "026a593e"
-    ],
-    "born_step": 6298,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "eb78f934": {
-    "generation": 13,
-    "parent_ids": [
-      "d79d892c",
-      "026a593e"
-    ],
-    "born_step": 6298,
-    "died_step": 6550,
-    "cause": "predation_2hit",
-    "fitness": 25.200000000000003
-  },
-  "d5eea335": {
-    "generation": 12,
-    "parent_ids": [
-      "6b72effb",
-      "0ab6f873"
-    ],
-    "born_step": 6309,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "96dd5d54": {
-    "generation": 12,
-    "parent_ids": [
-      "6b72effb",
-      "0ab6f873"
-    ],
-    "born_step": 6309,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "8669aeda": {
-    "generation": 11,
-    "parent_ids": [
-      "9711ef3d",
-      "d79d892c"
-    ],
-    "born_step": 6398,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "0e6eadcf": {
-    "generation": 11,
-    "parent_ids": [
-      "9711ef3d",
-      "d79d892c"
-    ],
-    "born_step": 6398,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "24530c5a": {
-    "generation": 11,
-    "parent_ids": [
-      "afc1a8d5",
-      "89cb4385"
-    ],
-    "born_step": 6457,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "759dc447": {
-    "generation": 11,
-    "parent_ids": [
-      "afc1a8d5",
-      "89cb4385"
-    ],
-    "born_step": 6457,
-    "died_step": 7714,
-    "cause": "starvation",
-    "fitness": 130.7
-  },
-  "309dbfd5": {
-    "generation": 12,
-    "parent_ids": [
-      "6b72effb",
-      "3e5fde2e"
-    ],
-    "born_step": 6460,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "3207bb23": {
-    "generation": 12,
-    "parent_ids": [
-      "afc1a8d5",
-      "6c6daf4f"
-    ],
-    "born_step": 6557,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "5b231e0a": {
-    "generation": 12,
-    "parent_ids": [
-      "afc1a8d5",
-      "6c6daf4f"
-    ],
-    "born_step": 6557,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "60760989": {
-    "generation": 11,
-    "parent_ids": [
-      "b43f7945",
-      "d4a2a460"
-    ],
-    "born_step": 6577,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "9fb8fc50": {
-    "generation": 12,
-    "parent_ids": [
-      "6c6daf4f",
-      "3e5fde2e"
-    ],
-    "born_step": 6657,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "2233bc6f": {
-    "generation": 12,
-    "parent_ids": [
-      "6c6daf4f",
-      "3e5fde2e"
-    ],
-    "born_step": 6657,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "c2eca8e4": {
-    "generation": 13,
-    "parent_ids": [
-      "df99dd24",
-      "a26e7bef"
-    ],
-    "born_step": 6669,
-    "died_step": 7721,
-    "cause": "starvation",
-    "fitness": 105.2
-  },
-  "85237208": {
-    "generation": 12,
-    "parent_ids": [
-      "9f6bb648",
-      "d5b3821e"
-    ],
-    "born_step": 6684,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "c1011e14": {
-    "generation": 13,
-    "parent_ids": [
-      "83a9259c",
-      "3207bb23"
-    ],
-    "born_step": 6807,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "1d8001e1": {
-    "generation": 13,
-    "parent_ids": [
-      "83a9259c",
-      "3207bb23"
-    ],
-    "born_step": 6807,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "3581ae38": {
-    "generation": 11,
-    "parent_ids": [
-      "09423398",
-      "9955e14a"
-    ],
-    "born_step": 6932,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "de64feb1": {
-    "generation": 11,
-    "parent_ids": [
-      "09423398",
-      "9955e14a"
-    ],
-    "born_step": 6932,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "722fe487": {
-    "generation": 12,
-    "parent_ids": [
-      "247322be",
-      "8a7446ba"
-    ],
-    "born_step": 7004,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "4ecfdb29": {
-    "generation": 11,
-    "parent_ids": [
-      "9955e14a",
-      "22ba3b2c"
-    ],
-    "born_step": 7132,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "6b3f3278": {
-    "generation": 11,
-    "parent_ids": [
-      "9955e14a",
-      "22ba3b2c"
-    ],
-    "born_step": 7132,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "e0282d34": {
-    "generation": 10,
-    "parent_ids": [
-      "5279bd97",
-      "f3b8dabe"
-    ],
-    "born_step": 7147,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "fc8b5842": {
-    "generation": 11,
-    "parent_ids": [
-      "9955e14a",
-      "d4a2a460"
-    ],
-    "born_step": 7332,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "f728a3e5": {
-    "generation": 11,
-    "parent_ids": [
-      "9f6bb648",
-      "b46aaf77"
-    ],
-    "born_step": 7351,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "40f1cedc": {
-    "generation": 11,
-    "parent_ids": [
-      "9711ef3d",
-      "bd70c736"
-    ],
-    "born_step": 7482,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "625dfc1c": {
-    "generation": 11,
-    "parent_ids": [
-      "9f6bb648",
-      "bd70c736"
-    ],
-    "born_step": 7682,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "7bf28992": {
-    "generation": 11,
-    "parent_ids": [
-      "9f6bb648",
-      "bd70c736"
-    ],
-    "born_step": 7682,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "c8457030": {
-    "generation": 12,
-    "parent_ids": [
-      "22ba3b2c",
-      "3d938e41"
-    ],
-    "born_step": 7722,
-    "died_step": null,
-    "cause": null,
-    "fitness": null
-  },
-  "43431e3c": {
-    "generation": 12,
-    "parent_ids": [
-      "22ba3b2c",
-      "3d938e41"
-    ],
-    "born_step": 7722,
+  "c68090ec": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 15539,
     "died_step": null,
     "cause": null,
     "fitness": null
   },
-  "b089811f": {
-    "generation": 10,
-    "parent_ids": [
-      "c84befa4",
-      "f3b8dabe"
-    ],
-    "born_step": 7866,
+  "9ce50657": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 15743,
     "died_step": null,
     "cause": null,
     "fitness": null
   },
-  "2f466eaf": {
-    "generation": 12,
-    "parent_ids": [
-      "d59723e9",
-      "6c6daf4f"
-    ],
-    "born_step": 8028,
+  "0eff230e": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 15849,
     "died_step": null,
     "cause": null,
     "fitness": null
   },
-  "5789ede7": {
-    "generation": 12,
-    "parent_ids": [
-      "d59723e9",
-      "6c6daf4f"
-    ],
-    "born_step": 8028,
+  "a12de57e": {
+    "generation": 7,
+    "parent_ids": [],
+    "born_step": 16163,
     "died_step": null,
     "cause": null,
     "fitness": null

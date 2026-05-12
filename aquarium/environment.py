@@ -1,3 +1,4 @@
+import uuid
 import numpy as np
 from typing import List
 
@@ -5,7 +6,7 @@ from core.environment import Environment
 from aquarium.food import Food
 from aquarium.super_food import SuperFood
 from aquarium.predator import Predator
-from aquarium.fish_agent import FishAgent
+from aquarium.fish_agent import FishAgent, register_lineage_color
 from brain.neural_brain import NeuralBrain
 from genetics.genome import Genome
 from genetics.crossover import crossover
@@ -248,25 +249,34 @@ class AquariumEnvironment(Environment):
                 continue
             partners = [
                 a for a in candidates
-                if a.id != p1.id and a.id not in already_mated
+                if a.id != p1.id
+                and a.id not in already_mated
+                and a.lineage_id != p1.lineage_id   # same lineage = no mating
                 and p1.distance_to(a) < p1.detection_radius * 0.6
             ]
             if not partners:
                 continue
             p2 = min(partners, key=lambda a: p1.distance_to(a))
 
-            cg1, cg2 = crossover(p1.genome, p2.genome, self._crossover_method)
+            cg1, cg2, r1, r2 = crossover(p1.genome, p2.genome, self._crossover_method)
             cg1 = mutate(cg1, self.config)
             cg2 = mutate(cg2, self.config)
             next_gen = max(p1.generation, p2.generation) + 1
 
-            for cg in [cg1, cg2]:
+            # Blend parent colors weighted by how much DNA each child got from p1
+            def _blend(c1, c2, t):
+                return tuple(min(255, int(c1[i] * t + c2[i] * (1 - t))) for i in range(3))
+
+            for cg, ratio in [(cg1, r1), (cg2, r2)]:
+                new_lid = str(uuid.uuid4())[:8]
+                blended_color = _blend(p1.color, p2.color, ratio)
+                register_lineage_color(new_lid, blended_color)
                 offspring.append(self._make_agent(
                     position   = p1.position + np.random.randn(2) * 15,
                     genome     = cg,
                     generation = next_gen,
                     parent_ids = [p1.id, p2.id],
-                    lineage_id = p1.lineage_id,
+                    lineage_id = new_lid,
                 ))
 
             p1.energy -= p1.reproduction_cost - self._repro_energy_reward
@@ -281,11 +291,16 @@ class AquariumEnvironment(Environment):
     # ── Population recovery ───────────────────────────────────────────────────
 
     def _recover_population(self) -> None:
+        from aquarium.fish_agent import _lineage_color_map
         agents = self.get_entities_of_type(FishAgent)
         deficit = self._min_agents - len(agents)
         if deficit <= 0:
             return
         saved = self.memory_manager.load_best_genomes() if self.memory_manager else []
+
+        # Track which lineage_ids are already in use so every spawned agent is unique
+        used_lineages = {a.lineage_id for a in agents}
+
         for i in range(deficit):
             if saved:
                 g = saved[i % len(saved)]
@@ -297,6 +312,19 @@ class AquariumEnvironment(Environment):
                     lid    = g.get("lineage_id")
             else:
                 genome, gen, lid = Genome.random(self._genome_size), 0, None
+
+            # If this lineage is already represented, derive a new color-shifted lineage
+            if lid is not None and lid in used_lineages:
+                base = _lineage_color_map.get(lid, (150, 150, 150))
+                new_lid = str(uuid.uuid4())[:8]
+                varied = tuple(
+                    min(255, max(0, base[j] + int(np.random.uniform(-55, 56))))
+                    for j in range(3)
+                )
+                register_lineage_color(new_lid, varied)
+                lid = new_lid
+
+            used_lineages.add(lid if lid is not None else "_none_")
 
             agent = self._make_agent(
                 position=np.array([

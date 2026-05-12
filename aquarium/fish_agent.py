@@ -29,6 +29,11 @@ def get_lineage_color_map() -> dict:
     return _lineage_color_map
 
 
+def register_lineage_color(lineage_id: str, color: tuple) -> None:
+    """Pre-register a custom blended color before the agent is constructed."""
+    _lineage_color_map[lineage_id] = color
+
+
 # ── FishAgent ──────────────────────────────────────────────────────────────────
 
 class FishAgent(Agent):

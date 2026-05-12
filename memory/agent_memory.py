@@ -5,7 +5,7 @@ import os
 from typing import List
 
 
-SAVE_DIR = os.path.join(os.path.dirname(__file__), "..", "saved_agents")
+SAVE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "saved_agents"))
 BEST_FILE = os.path.join(SAVE_DIR, "best_agents.json")
 
 
