@@ -63,10 +63,10 @@ class AquariumEnvironment(Environment):
     # ── Runtime controls ─────────────────────────────────────────────────────
 
     def increase_food(self,       n: int = 10) -> None: self._max_food       = min(self._max_food + n, 400)
-    def decrease_food(self,       n: int = 10) -> None: self._max_food       = max(self._max_food - n, 10)
+    def decrease_food(self,       n: int = 10) -> None: self._max_food       = max(self._max_food - n, 0)
     def increase_super_food(self, n: int = 1)  -> None: self._max_super_food = min(self._max_super_food + n, 20)
     def decrease_super_food(self, n: int = 1)  -> None: self._max_super_food = max(self._max_super_food - n, 0)
-    def increase_predators(self,  n: int = 1)  -> None: self._max_predators  = min(self._max_predators + n, 12)
+    def increase_predators(self,  n: int = 1)  -> None: self._max_predators  = min(self._max_predators + n, 30)
     def decrease_predators(self,  n: int = 1)  -> None: self._max_predators  = max(self._max_predators - n, 0)
     def increase_agents(self,     n: int = 10) -> None: self._max_agents     = min(self._max_agents + n, 300)
     def decrease_agents(self,     n: int = 10) -> None: self._max_agents     = max(self._max_agents - n, self._min_agents)

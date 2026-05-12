@@ -71,7 +71,7 @@ class FishAgent(Agent):
         self.reproduction_cost:       float = ac.get("reproduction_cost",        60.0)
         self.reproduction_cooldown:   int   = ac.get("reproduction_cooldown",     100)
         self.max_speed:               float = ac.get("speed",                     3.0)
-        self.detection_radius:        float = ac.get("detection_radius",        110.0)
+        self.detection_radius:        float = ac.get("detection_radius",        300.0)
         self.eat_radius:              float = ac.get("eat_radius",               18.0)
         self._steps_since_last_reproduction: int = self.reproduction_cooldown
         self.name: str = ""   # user-assigned label

@@ -177,12 +177,16 @@ class SettingsPanel:
                     return True
 
             # Saved agents (saved tab)
-            for (row_r, spawn_r, rec) in self._saved_rects:
-                if row_r.x <= lx <= row_r.x + row_r.w and row_r.y <= cy <= row_r.y + row_r.h:
-                    self._saved_sel = self._saved_rects.index((row_r, spawn_r, rec))
+            for idx, (row_r, spawn_r, del_r, rec) in enumerate(self._saved_rects):
                 if spawn_r.x <= lx <= spawn_r.x + spawn_r.w and spawn_r.y <= cy <= spawn_r.y + spawn_r.h:
                     environment.spawn_from_genome(rec)
                     return True
+                if del_r and del_r.x <= lx <= del_r.x + del_r.w and del_r.y <= cy <= del_r.y + del_r.h:
+                    if memory_manager:
+                        memory_manager.delete_named_agent(rec["id"])
+                    return True
+                if row_r.x <= lx <= row_r.x + row_r.w and row_r.y <= cy <= row_r.y + row_r.h:
+                    self._saved_sel = idx
 
             return True  # click inside panel, always consume
 
@@ -307,26 +311,41 @@ class SettingsPanel:
             return y + 20
 
         self._saved_rects = []
+        named_ids = {r["id"] for r in memory_manager._named}
+
         for i, rec in enumerate(records):
+            is_named = rec["id"] in named_ids
             sel = (i == self._saved_sel)
-            bg  = (30, 58, 115, 200) if sel else (20, 38, 80, 160)
-            row_r  = pygame.Rect(4, y, PANEL_W - 8, 50)
+            bg  = (30, 58, 115, 200) if sel else (25, 50, 40, 180) if is_named else (20, 38, 80, 160)
+            row_r  = pygame.Rect(4, y, PANEL_W - 8, 52)
             pygame.draw.rect(surf, bg, row_r, border_radius=4)
 
+            # Pin icon for named agents
             name = rec.get("name") or rec.get("id", "?")[:12]
+            prefix = "★ " if is_named else ""
+            name_col = _GOLD if is_named else _TEXT
             gen  = rec.get("generation", 0)
             fit  = rec.get("fitness", 0.0)
             food = rec.get("food_eaten", 0)
-            surf.blit(self._fs.render(f"{name}", True, _TEXT), (10, y + 3))
-            surf.blit(self._fs.render(f"Gen:{gen}  Fit:{fit:.0f}  Besin:{food}", True, _DIM), (10, y + 19))
+            surf.blit(self._fs.render(f"{prefix}{name}", True, name_col), (10, y + 4))
+            surf.blit(self._fs.render(f"Gen:{gen}  Fit:{fit:.0f}  Besin:{food}", True, _DIM), (10, y + 20))
 
-            spawn_r = pygame.Rect(PANEL_W - 76, y + 12, 68, 24)
+            # Spawn button
+            spawn_r = pygame.Rect(PANEL_W - 76, y + 6, 68, 20)
             pygame.draw.rect(surf, _GREEN, spawn_r, border_radius=3)
-            sl = self._fs.render("Spawn Et", True, (0, 0, 0))
-            surf.blit(sl, (spawn_r.x + spawn_r.w // 2 - sl.get_width() // 2, spawn_r.y + 5))
+            sl = self._fs.render("Spawn", True, (0, 0, 0))
+            surf.blit(sl, (spawn_r.x + spawn_r.w // 2 - sl.get_width() // 2, spawn_r.y + 3))
 
-            self._saved_rects.append((row_r, spawn_r, rec))
-            y += 56
+            # Delete button (only for named agents)
+            del_r = None
+            if is_named:
+                del_r = pygame.Rect(PANEL_W - 76, y + 30, 68, 18)
+                pygame.draw.rect(surf, _RED, del_r, border_radius=3)
+                dl = self._fs.render("Sil", True, (255, 255, 255))
+                surf.blit(dl, (del_r.x + del_r.w // 2 - dl.get_width() // 2, del_r.y + 2))
+
+            self._saved_rects.append((row_r, spawn_r, del_r, rec))
+            y += 58
 
         return y
 
