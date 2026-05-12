@@ -450,7 +450,7 @@ class Renderer:
         surf    = pygame.Surface((pw, ph), pygame.SRCALPHA)
         pygame.draw.rect(surf, (10, 20, 50, 200), (0, 0, pw, ph), border_radius=7)
 
-        title = self._font_s.render("NESIL SIRALAMA", True, TEXT_COLOR)
+        title = self._font_s.render("RANKING", True, TEXT_COLOR)
         surf.blit(title, (8, 4))
 
         for i, (lid, data) in enumerate(top):
