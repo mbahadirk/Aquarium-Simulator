@@ -1,5 +1,4 @@
 import math
-
 from typing import Set
 
 import numpy as np
@@ -10,6 +9,7 @@ from aquarium.predator import Predator
 from aquarium.food import Food
 from aquarium.super_food import SuperFood
 from visualization.effects import EffectsManager
+from visualization.settings_panel import SettingsPanel, PANEL_W
 
 # ── Palette ───────────────────────────────────────────────────────────────────
 BG_COLOR       = (8,  24,  58)
@@ -39,20 +39,39 @@ class Renderer:
         self._font_s  = pygame.font.SysFont("consolas", 12)
         self._effects      = EffectsManager(width, height)
         self._tick         = 0
-        self._debug_vision = False   # toggled by D key
+        self._debug_vision = False
         self._vision_surf  = pygame.Surface((width, height), pygame.SRCALPHA)
+
+        # Settings panel & context
+        self._panel = SettingsPanel(
+            width, height,
+            font=self._font, font_b=self._font_b, font_s=self._font_s,
+        )
+        self._environment   = None
+        self._memory_manager = None
+
+    def set_context(self, environment, memory_manager) -> None:
+        self._environment    = environment
+        self._memory_manager = memory_manager
 
     # ── Events ────────────────────────────────────────────────────────────────
 
     def handle_events(self) -> Set[str]:
         events: Set[str] = set()
         for event in pygame.event.get():
+            # Let settings panel consume events first
+            if self._panel.handle_event(event, self._environment, self._memory_manager):
+                continue
+
             if event.type == pygame.QUIT:
                 events.add("quit")
+            elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                self._handle_left_click(event.pos)
             elif event.type == pygame.KEYDOWN:
                 k = event.key
                 if   k == pygame.K_ESCAPE:                          events.add("quit")
                 elif k == pygame.K_SPACE:                           events.add("pause")
+                elif k == pygame.K_s:                               self._panel.toggle()
                 # Food
                 elif k in (pygame.K_PLUS, pygame.K_EQUALS, pygame.K_KP_PLUS):
                                                                     events.add("food_up")
@@ -69,6 +88,26 @@ class Renderer:
                 # Debug vision
                 elif k == pygame.K_d:                               events.add("toggle_debug")
         return events
+
+    def _handle_left_click(self, pos) -> None:
+        if self._environment is None:
+            return
+        mx, my = pos
+        # Don't select through the open panel
+        if self._panel.visible and mx >= self._width - PANEL_W:
+            return
+        best, best_dist = None, 24.0
+        for e in self._environment.entities:
+            if not e.alive:
+                continue
+            if not isinstance(e, (FishAgent, Predator)):
+                continue
+            d = float(np.linalg.norm(np.array([mx, my], float) - e.position))
+            r = getattr(e, "RADIUS", 10) + 6
+            if d < r and d < best_dist:
+                best, best_dist = e, d
+        if best is not None:
+            self._panel.select(best)
 
     # ── Main render ───────────────────────────────────────────────────────────
 
@@ -92,6 +131,10 @@ class Renderer:
             lbl = self._font_b.render("PAUSED — SPACE to resume", True, PAUSE_COLOR)
             screen.blit(lbl, (self._width // 2 - lbl.get_width() // 2,
                               self._height // 2 - 10))
+
+        # Settings panel (drawn last, on top of everything)
+        self._panel.draw(screen, environment, self._memory_manager, self._tick)
+
         pygame.display.flip()
         self._clock.tick()
 

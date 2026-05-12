@@ -40,6 +40,7 @@ def main() -> None:
     # ------------------------------------------------------------------ subsystems
     wc = config.get("world", {})
     renderer = Renderer(wc.get("width", 1280), wc.get("height", 720))
+    renderer.set_context(env, memory)
 
     log_path = config.get("logging", {}).get("log_file", "sim_logging/sim_log.csv")
     log_path = os.path.join(os.path.dirname(__file__), log_path)

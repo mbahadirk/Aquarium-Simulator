@@ -52,6 +52,30 @@ class AgentMemory:
             for r in self._best
         ]
 
+    def load_best_genomes_full(self) -> List[dict]:
+        """Return full saved records (includes fitness, name, etc.)."""
+        return list(self._best)
+
+    def save_named_agent(self, agent, name: str, step: int) -> None:
+        """Force-save a single agent with a custom name regardless of fitness rank."""
+        record = {
+            "id":         agent.id,
+            "name":       name,
+            "lineage_id": agent.lineage_id,
+            "fitness":    float(agent.fitness),
+            "generation": agent.generation,
+            "weights":    agent.genome.to_list(),
+            "age":        agent.age,
+            "food_eaten": agent.total_food_eaten,
+            "children":   agent.children_count,
+            "saved_step": step,
+        }
+        # Replace existing entry with same id or append
+        self._best = [r for r in self._best if r["id"] != agent.id]
+        self._best.append(record)
+        self._best.sort(key=lambda r: r["fitness"], reverse=True)
+        self._persist()
+
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------

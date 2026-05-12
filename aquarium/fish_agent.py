@@ -8,20 +8,29 @@ from genetics.genome import Genome
 
 
 # ── Lineage colour registry ────────────────────────────────────────────────────
-_LINEAGE_PALETTE = [
-    (100, 180, 255), (100, 255, 140), (255, 220,  80), (255, 130,  80),
-    (200, 100, 255), ( 80, 240, 220), (255, 100, 160), (200, 255, 100),
-    (255, 200, 200), (140, 200, 255),
-]
 _lineage_color_map: dict = {}
-_lineage_counter: list   = [0]
+
+
+def random_vivid_color() -> tuple:
+    """Generate a random saturated, visible color via HSV."""
+    h = np.random.uniform(0, 360)
+    s = np.random.uniform(0.65, 1.0)
+    v = np.random.uniform(0.70, 1.0)
+    c = v * s
+    x = c * (1 - abs((h / 60) % 2 - 1))
+    m = v - c
+    if   h < 60:  r, g, b = c, x, 0
+    elif h < 120: r, g, b = x, c, 0
+    elif h < 180: r, g, b = 0, c, x
+    elif h < 240: r, g, b = 0, x, c
+    elif h < 300: r, g, b = x, 0, c
+    else:         r, g, b = c, 0, x
+    return (int((r + m) * 255), int((g + m) * 255), int((b + m) * 255))
 
 
 def _assign_lineage_color(lineage_id: str) -> tuple:
     if lineage_id not in _lineage_color_map:
-        idx = _lineage_counter[0] % len(_LINEAGE_PALETTE)
-        _lineage_color_map[lineage_id] = _LINEAGE_PALETTE[idx]
-        _lineage_counter[0] += 1
+        _lineage_color_map[lineage_id] = random_vivid_color()
     return _lineage_color_map[lineage_id]
 
 
@@ -65,6 +74,7 @@ class FishAgent(Agent):
         self.detection_radius:        float = ac.get("detection_radius",        110.0)
         self.eat_radius:              float = ac.get("eat_radius",               18.0)
         self._steps_since_last_reproduction: int = self.reproduction_cooldown
+        self.name: str = ""   # user-assigned label
 
         # Lineage & colour
         self.lineage_id: str   = lineage_id if lineage_id else self.id

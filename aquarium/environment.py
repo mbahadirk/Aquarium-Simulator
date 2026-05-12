@@ -6,7 +6,7 @@ from core.environment import Environment
 from aquarium.food import Food
 from aquarium.super_food import SuperFood
 from aquarium.predator import Predator
-from aquarium.fish_agent import FishAgent, register_lineage_color
+from aquarium.fish_agent import FishAgent, register_lineage_color, random_vivid_color
 from brain.neural_brain import NeuralBrain
 from genetics.genome import Genome
 from genetics.crossover import crossover
@@ -44,12 +44,21 @@ class AquariumEnvironment(Environment):
         self._repro_energy_reward:    float = ac.get("reproduction_energy_reward",  30.0)
 
         bc = config.get("brain", {})
-        self._brain_input  = bc.get("input_size",   28)
-        self._brain_hidden = bc.get("hidden_sizes", [16, 8])
+        self._brain_input  = bc.get("input_size",   34)
+        self._brain_hidden = bc.get("hidden_sizes", [32, 16])
         self._brain_output = bc.get("output_size",   2)
         self._genome_size  = NeuralBrain.genome_size(
             self._brain_input, self._brain_hidden, self._brain_output
         )
+
+        # ── Runtime-adjustable values (live sliders) ──────────────────────────
+        self._rt_pred_speed    = float(pc.get("speed",            1.3))
+        self._rt_pred_det_r    = float(pc.get("detection_radius", 180.0))
+        self._rt_agent_speed   = float(ac.get("speed",            3.0))
+        self._rt_agent_det_r   = float(ac.get("detection_radius", 180.0))
+        self._rt_energy_decay  = float(ac.get("energy_decay",     0.03))
+        self._rt_repro_thresh  = float(ac.get("reproduction_threshold", 160.0))
+        self._rt_repro_cost    = float(ac.get("reproduction_cost",       60.0))
 
     # ── Runtime controls ─────────────────────────────────────────────────────
 
@@ -61,6 +70,50 @@ class AquariumEnvironment(Environment):
     def decrease_predators(self,  n: int = 1)  -> None: self._max_predators  = max(self._max_predators - n, 0)
     def increase_agents(self,     n: int = 10) -> None: self._max_agents     = min(self._max_agents + n, 300)
     def decrease_agents(self,     n: int = 10) -> None: self._max_agents     = max(self._max_agents - n, self._min_agents)
+
+    def set_runtime(self, attr: str, val: float) -> None:
+        """Set a runtime variable and propagate the change to all living entities."""
+        setattr(self, attr, val)
+        if attr == "_rt_pred_speed":
+            for p in self.get_entities_of_type(Predator):
+                p.speed = val
+        elif attr == "_rt_pred_det_r":
+            for p in self.get_entities_of_type(Predator):
+                p.detection_radius = val
+        elif attr == "_rt_agent_speed":
+            for a in self.get_entities_of_type(FishAgent):
+                a.max_speed = val
+        elif attr == "_rt_agent_det_r":
+            for a in self.get_entities_of_type(FishAgent):
+                a.detection_radius = val
+        elif attr == "_rt_energy_decay":
+            for a in self.get_entities_of_type(FishAgent):
+                a.energy_decay = val
+        elif attr == "_rt_repro_thresh":
+            for a in self.get_entities_of_type(FishAgent):
+                a.reproduction_threshold = val
+        elif attr == "_rt_repro_cost":
+            for a in self.get_entities_of_type(FishAgent):
+                a.reproduction_cost = val
+
+    def spawn_from_genome(self, genome_dict: dict) -> None:
+        """Spawn a single agent from a saved genome record."""
+        if len(genome_dict["weights"]) != self._genome_size:
+            return
+        genome = Genome.from_list(genome_dict["weights"])
+        agent = self._make_agent(
+            position=np.array([
+                np.random.uniform(80, self.width  - 80),
+                np.random.uniform(80, self.height - 80),
+            ]),
+            genome=genome,
+            generation=genome_dict.get("generation", 0),
+            parent_ids=[],
+            lineage_id=genome_dict.get("lineage_id"),
+        )
+        self.add_entity(agent)
+        if self.lineage_tracker:
+            self.lineage_tracker.register_birth(agent, self.step_count)
 
     # ── Population seeding ───────────────────────────────────────────────────
 
@@ -118,7 +171,10 @@ class AquariumEnvironment(Environment):
             pos = np.array([float(self.width), np.random.uniform(0, self.height)])
         else:
             pos = np.array([np.random.uniform(0, self.width), float(self.height)])
-        self.add_entity(Predator(pos, self.config))
+        pred = Predator(pos, self.config)
+        pred.speed            = self._rt_pred_speed
+        pred.detection_radius = self._rt_pred_det_r
+        self.add_entity(pred)
 
     # ── Main step ────────────────────────────────────────────────────────────
 
@@ -263,9 +319,11 @@ class AquariumEnvironment(Environment):
             cg2 = mutate(cg2, self.config)
             next_gen = max(p1.generation, p2.generation) + 1
 
-            # Blend parent colors weighted by how much DNA each child got from p1
+            # Blend parent colors weighted by DNA ratio, then add random variation
             def _blend(c1, c2, t):
-                return tuple(min(255, int(c1[i] * t + c2[i] * (1 - t))) for i in range(3))
+                parent_mix = tuple(int(c1[i] * t + c2[i] * (1 - t)) for i in range(3))
+                rand_c = random_vivid_color()
+                return tuple(min(255, int(parent_mix[i] * 0.72 + rand_c[i] * 0.28)) for i in range(3))
 
             for cg, ratio in [(cg1, r1), (cg2, r2)]:
                 new_lid = str(uuid.uuid4())[:8]
@@ -348,10 +406,17 @@ class AquariumEnvironment(Environment):
             [FishAgent.RADIUS, FishAgent.RADIUS],
             [self.width - FishAgent.RADIUS, self.height - FishAgent.RADIUS],
         )
-        return FishAgent(
+        agent = FishAgent(
             position=pos, brain=brain, genome=genome, config=self.config,
             generation=generation, parent_ids=parent_ids, lineage_id=lineage_id,
         )
+        # Apply current runtime overrides
+        agent.max_speed            = self._rt_agent_speed
+        agent.detection_radius     = self._rt_agent_det_r
+        agent.energy_decay         = self._rt_energy_decay
+        agent.reproduction_threshold = self._rt_repro_thresh
+        agent.reproduction_cost    = self._rt_repro_cost
+        return agent
 
     def _collect_stats(self) -> dict:
         agents = self.get_entities_of_type(FishAgent)
